@@ -1,0 +1,1 @@
+SELECT customer.Customer_id, customer.Cust_Name, salesman.Salesman_Id, salesman.Name , salesman.Commission FROM customer INNER JOIN salesman ON customer.Salesman_Id=salesman.Salesman_Id WHERE Commission>0.12;

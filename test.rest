@@ -1,0 +1,26 @@
+GET http://localhost:3000/person HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiamhvbiIsImlhdCI6MTY0MTU3MzcyOH0.RmLWP0grO9_AJyn5QXW7vCLTAYsJqz8-07v7uSB35cM
+
+###
+POST http://localhost:3000/person HTTP/1.1
+content-type: application/json
+
+{
+    "user_id":1,
+    "username":"vinith",
+    "contact_number":663663663,
+    "password":"password"
+}
+
+###
+POST http://localhost:3000/login HTTP/1.1
+content-type: application/json
+
+{
+    "username":"jhon",
+    "password":"newpass"
+}
+
+###
+DELETE http://localhost:3000/person?id=1&id=2 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiamhvbiIsImlhdCI6MTY0MTU1NDY2Nn0.G-uT4Z270z1SgbGkvp2KbuLW08tBJrNun5R8yOM3gSk
